@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     }
  
     @IBAction func dividePressed(_ sender: RoundButton) {
-        operation(operation: .Subtract  )
+        operation(operation: .Divide  )
     }
     @IBAction func multiplayPressed(_ sender: RoundButton) {
         operation(operation: .Multiply)
@@ -71,10 +71,9 @@ class ViewController: UIViewController {
         operation(operation: .Add)
     }
     
-    @IBAction func equalsPressed(_ sender: RoundButton) {
+    @IBAction func equalPressed(_ sender: Any) {
         operation(operation: currentOperations)
     }
-    
     
     func operation (operation: Operation ){
         if currentOperations != .Null{
